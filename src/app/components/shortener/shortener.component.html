@@ -1,0 +1,13 @@
+<div class="card-shortener">
+    <div class="card-title">
+        <h2>Cole a URL para ser encurtada</h2>
+    </div>
+    <div class="input-shortener">
+        <input type="text" placeholder="Cole o link aqui" [(ngModel)]="inputUrl">
+        <button [disabled]="inputUrl == ''" (click)="saveUrl()">Encurtar URL</button>
+    </div>
+    <div class="card-footer">
+        <p>uShorter é uma ferramenta para encurtar URLs e gerar links curtos
+            com o uShorter de URL é possível criar um link encurtado fácil de compartilhar</p>
+    </div>
+</div>

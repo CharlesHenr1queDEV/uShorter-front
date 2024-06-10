@@ -1,0 +1,42 @@
+.card-click-counter {
+  max-height: 80%;
+  min-height: 300px;
+  padding: 40px;
+  background-color: var(--b12);
+  display: grid;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.card-click-counter-header {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.card-url-header a i {
+  color: var(--b1);
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+}
+
+.card-click-counter-info{
+    display: grid;
+    gap: 20px;
+}
+
+.link-url{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.input-url button:disabled{
+    background-color: var(--b8) !important;
+}

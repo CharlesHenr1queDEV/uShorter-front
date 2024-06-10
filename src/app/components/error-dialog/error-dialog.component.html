@@ -1,0 +1,15 @@
+<!-- <h1 mat-dialog-title>Erro</h1> -->
+<div mat-dialog-content class="modal-dialog">
+  <div>
+    <i class="bi bi-exclamation-circle-fill"></i>
+  </div>
+  <div>
+      <h2>{{ data.codeError }}</h2>
+  </div>
+  <div>
+      <p>{{ data.message }}</p>
+  </div>
+</div>
+<div mat-dialog-actions >
+  <button class="button-click-modal" (click)="onNoClick()">Fechar</button>
+</div>

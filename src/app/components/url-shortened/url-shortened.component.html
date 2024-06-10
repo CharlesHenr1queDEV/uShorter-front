@@ -1,0 +1,32 @@
+<div class="card-url-shortened">
+    <div class="card-url-header">
+        <div>
+            <a href="#" style="font-size: 2em;">
+                <i class="bi bi-arrow-left-circle"></i>
+            </a>
+        </div>
+
+        <div class="title">
+            <h2>Copie sua URL encurtada</h2>
+        </div>
+    </div>
+    <div class="input-url-shortened">
+        <input disabled type="text" placeholder="Copiar URL" [(ngModel)]="shortUrl">
+        <button (click)="copyToClipboard()">Copiar URL</button>
+    </div>
+    <div>
+        <p id="copy-message" *ngIf="messageVisible" style="color: green;">Link copiado!</p>
+    </div>
+    <div class="card-url-info">
+        <div class="link-url">
+            <h3>URL Longa:</h3>
+
+            <p>{{originalUrl}}</p>
+
+        </div>
+        <div class="actions-button">
+            <button routerLink="/shortener">Encurtar uma nova URL</button>
+            <button (click)="findQuantityClick()">Ver quantidade de clicks</button>
+        </div>
+    </div>
+</div>

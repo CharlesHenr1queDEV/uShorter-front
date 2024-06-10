@@ -1,0 +1,80 @@
+.card-url-shortened {
+  max-height: 80%;
+  padding: 40px;
+  background-color: var(--b12);
+  display: grid;
+  grid-template-rows: 0.5fr 2fr 0.3fr 0.5fr;
+  align-items: center;
+  border-radius: 20px;
+  gap: 10px;
+}
+
+.card-url-header {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.card-url-header a i {
+  color: var(--b1);
+}
+
+.title {
+  text-align: center;
+  width: 100%;
+}
+
+.input-url-shortened {
+  display: flex;
+  justify-content: center;
+}
+
+.input-url-shortened input {
+  min-width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px; /* Arredonda os cantos esquerdo superior e inferior */
+  outline: none;
+}
+
+.input-url-shortened button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-left: none; /* Remove a borda do lado esquerdo para fundir com o input */
+  border-radius: 0 4px 4px 0;
+  background-color: var(--r1);
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.input-url-shortened button:hover {
+  background-color: var(--r2);
+}
+
+.actions-button {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.card-url-info {
+  display: grid;
+  gap: 20px;
+}
+
+.link-url {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.link-url p {
+  word-wrap: break-word; /* Quebra a palavra se for muito longa */
+  word-break: break-all; /* Quebra a palavra em qualquer ponto */
+}

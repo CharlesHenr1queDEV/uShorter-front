@@ -1,0 +1,41 @@
+.card-shortener{
+    max-height: 80%;
+    min-height: 300px;
+    padding: 40px;
+    background-color: var(--b12);
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    align-items: center;
+    border-radius: 20px;
+}
+
+
+.input-shortener {
+    display: flex;
+    justify-content: center;
+}
+
+.input-shortener input {
+    min-width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px; /* Arredonda os cantos esquerdo superior e inferior */
+    outline: none;
+}
+
+.input-shortener button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-left: none; /* Remove a borda do lado esquerdo para fundir com o input */
+    border-radius: 0 4px 4px 0;
+    background-color: var(--r1);
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.input-shortener button:hover {
+    background-color: var(--r2);
+}

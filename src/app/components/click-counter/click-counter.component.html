@@ -1,0 +1,22 @@
+<div class="card-click-counter">
+    <div class="card-click-counter-header">
+        <div>
+            <a href="#"  style="font-size: 2em;" >
+                <i class="bi bi-arrow-left-circle"></i>
+            </a>
+        </div>
+        <div class="title">
+            <h2>Contador de Cliques na URL</h2>
+        </div>
+    </div>
+    <div class="input-url">
+        <input type="text" placeholder="Digite aqui a url curta" [(ngModel)]="shortUrl">
+        <button [disabled]="!shortUrl" (click)="findQuantityClick()">Buscar</button>
+    </div>
+    <div class="card-click-counter-info">
+        <div class="link-url">
+            <h3>Quantidade de cliques:</h3>
+            <p>{{clickQuantity}}</p>
+        </div>
+    </div>
+</div>
