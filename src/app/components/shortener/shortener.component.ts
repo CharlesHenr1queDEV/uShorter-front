@@ -20,7 +20,7 @@ export class ShortenerComponent {
 
   saveUrl() {
     const originalUrlDTO: OriginalUrlDTO = { url: this.inputUrl };
-    const language = 'en';
+    const language = 'br';
 
     this.generateUrlService.saveUrlMapping(originalUrlDTO, language).subscribe(
       (response) => {
