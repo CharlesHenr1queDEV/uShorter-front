@@ -32,7 +32,12 @@ export class ClickCounterComponent implements OnInit {
         this.clickQuantity=response;
       },
       (error) => {
-        this.openErrorDialog(error.error, error.status);
+        if(error.status == 0){
+          let errorMen = 'Erro de conexão com o servidor';
+          this.openErrorDialog(errorMen, '500');
+        }else{
+          this.openErrorDialog(error.error, error.status);
+        }
       }
     );
   }
