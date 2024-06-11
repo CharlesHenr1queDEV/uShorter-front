@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  # Angular frontend config
+  frontend:
+    image: ushorter-front:latest
+    container_name: ushorter-front
+    ports:
+      - "4200:4200"
+volumes:
+  mysql_data:
