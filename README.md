@@ -1,7 +1,7 @@
 # uShorter Front-end
 
 ## Visão geral
-O projeto uShorter é um aplicativo de encurtamento de URL que permite aos usuários converter URLs longas em versões encurtadas. Ele oferece uma solução eficaz para compartilhar links longos de forma mais conveniente e fácil de lembrar. Além disso, o sistema fornece estatísticas detalhadas sobre o uso de cada URL encurtada, incluindo contagem de cliques.
+O projeto uShorter é um aplicativo de encurtamento de URL que permite aos usuários converter URLs longas em versões encurtadas. Ele oferece uma solução eficaz para compartilhar links longos de forma mais conveniente e fácil de lembrar. Além disso, o sistema fornece estatísticas detalhadas sobre o uso de cada URL encurtada, incluindo contagem de cliques .
 
 ## Características
 - Gerar URL curta
